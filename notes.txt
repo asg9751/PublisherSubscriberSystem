@@ -1,0 +1,58 @@
+	/*
+
+			// db
+			topic table same as model
+			publisher table
+			subscribe table
+			even table - same as model
+			publisher-event table - publisher id, event id
+			subscriber-topic table - subscriber id, topic id
+
+		 // pub-sub person menu
+
+		 - publish
+		 	- list out all topics
+		 	- select topic
+		 	- write title, content for the event
+		 	- publish
+		 - advertise
+		 	- write name of new topic - name and keywords
+		 	- add subscriber to list
+		 - read
+		 	- get messages from the event manager
+		 - subscribe
+		 	- all topics that he hasnt subbed to
+		 	- select and subscribe - one entry in sub table, and one in sub-topic table
+		 - un-subscribe
+		 	- all topics that he has subbed to
+		 	- select and unsub - remove from sub-topic topic, remove subscriber from the list
+
+
+
+		 // event manager
+
+		 - advertise
+		 	- get {name, topic name, keywords, type=adversise}
+		 	- if he is not there, add him, and add the topic with the keywords if it does not exists, else reject
+		 	- store, topic id, topic name, keywords
+		 - sub
+		 	- get {name, type=subscribe}
+		 	- send {list of all topics}
+		 	- get {name, topic}
+		 	- if he doesn't exist add him
+		 	- add to sub-topic db (id, topic-id)
+
+		- publish
+			- get {name, type=publish}
+			- send {list of all topics}
+		 	- get {name, topic, title, content}
+		 	- store in event table, {topic id, title, content, publisher id, time stamp}
+		 	- if topic per events > 10, delete the old ones
+
+		- read
+			- get {name, type=read}
+			- query subscriber-topic table -
+			- for each topic, get events from events table , using the events-topic table
+			- send {event - topic name, title, content from last event id,  if not event id, sort by time stamp, give last 10}
+			- update the sub table with the last timestamp
+		 */

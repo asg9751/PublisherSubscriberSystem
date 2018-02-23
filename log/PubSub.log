@@ -1,0 +1,3614 @@
+Compiled..
+Compiled..
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Stop one or more running containers
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:7ae3d184711a1739ac3b48ccab4f7c6521412448871df66cf603792d87e22482
+Deleted: sha256:67231a88f010707cbf4d6c78cc72d329c1134b751fb06fd545596c70ce75cb4b
+Deleted: sha256:7f52a650f1a1d486a54b3fd4470c21817f5ed06e4071097c0dc47f296c4519e1
+Deleted: sha256:b298d2e57a4d369365e4ace009547b1913644013c7d7a7f31485d7fca95afbed
+Deleted: sha256:8b2d39b01c4e16b1ba2bb14ff035f94452536bcc4185a62b6974556d924c4e73
+Deleted: sha256:2422e5668f566448c80c7b784c8d495225d88c0632613f21bfbdfffb67272615
+Deleted: sha256:e40eff40bd1f9523a38b7b363b4f878d2be1b6b7151fbf48d4af7790d29af960
+Untagged: pubsub_em:latest
+Deleted: sha256:552b97776cfc2b7f40b1ae3a222dc70b512bc46c01f5c1fd848d4609b9b74195
+Deleted: sha256:0a278f9ed1b589824671ea6b7d8d16b1de85ab7afe8fc6e051ada19ef4794c7f
+Deleted: sha256:2b856df4433b83e35fc61b891f3f245fe1e97b642c96d8cfa2f6f53ed0c91e84
+Deleted: sha256:7820314f948630b78aba7a9dd93679f0062281ee172cd3ff04e69b7aa44467b5
+Deleted: sha256:bd296ce416c81e6be9a7e8d7b7ade1535ebb7bb991b3c12cfff2cc35a1a00412
+Deleted: sha256:14658c89ed02378517706d0a5fb3f05f73338e9b9c6782c94bdfb91cc1c5374b
+Deleted: sha256:87779c626b5f242f2ead6ee26470896537ee4541896bc9f7e64f6a36b71a7e3a
+Deleted: sha256:93d6e9bf1e423424bd67e1e6ec2bf9e1d428a8774d0c1a5898b8a0f98a34ed1f
+Sending build context to Docker daemon  14.19MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in fe22490fea40
+Removing intermediate container fe22490fea40
+ ---> 5cd07932c828
+Step 3/8 : COPY . project
+ ---> d6e781b140db
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 5a244c3b5650
+Removing intermediate container 5a244c3b5650
+ ---> 110942389910
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in d62a62d46b05
+Removing intermediate container d62a62d46b05
+ ---> c788fe2e4680
+Step 6/8 : EXPOSE 8079
+ ---> Running in 4f1e5ab942c5
+Removing intermediate container 4f1e5ab942c5
+ ---> 29984fa49be8
+Step 7/8 : WORKDIR /project
+Removing intermediate container 4533ed098fbc
+ ---> 43a87fa79016
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 857a0a3da4bd
+Removing intermediate container 857a0a3da4bd
+ ---> 0601afcf99ef
+Successfully built 0601afcf99ef
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.19MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 5cd07932c828
+Step 3/8 : COPY . project
+ ---> 2a0716423541
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 7efa07db9124
+Removing intermediate container 7efa07db9124
+ ---> 4fb890b9a084
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 3e56d6c829c5
+Removing intermediate container 3e56d6c829c5
+ ---> f94211bbc47b
+Step 6/8 : EXPOSE 8079
+ ---> Running in b05852b4d964
+Removing intermediate container b05852b4d964
+ ---> d03336c5503a
+Step 7/8 : WORKDIR /project
+Removing intermediate container d0cd2267f157
+ ---> 729f45c10c88
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 7a526e151cae
+Removing intermediate container 7a526e151cae
+ ---> 4fa25d41b1f4
+Successfully built 4fa25d41b1f4
+Successfully tagged pubsub_sub:latest
+./src/edu/rit/CSCI652/impl/DbConnection.java:27: error: cannot find symbol
+	Clas.forName("org.sqlite.JDBC");
+	^
+  symbol:   variable Clas
+  location: class DbConnection
+1 error
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+  ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: > expected
+=======
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+   ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: ';' expected
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+                                                ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:112: error: ';' expected
+                        new Thread() {
+                                    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:114: error: ';' expected
+                            public void run() {
+                                           ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:120: error: illegal start of expression
+                        }.start();
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: illegal start of expression
+    public DbConnection()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: ';' expected
+    public DbConnection()
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: not a statement
+    public void insertEvent(int topicId, String title, String content)
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: illegal start of expression
+    public ArrayList<Event> getAllEvents() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: ';' expected
+    public ArrayList<Event> getAllEvents() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: illegal start of expression
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: illegal start of expression
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                   ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: not a statement
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                             ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: not a statement
+    public void insertTopic(String name, String keywords) {
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: illegal start of expression
+    public ArrayList<Topic> getAllTopics() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: ';' expected
+    public ArrayList<Topic> getAllTopics() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: illegal start of expression
+    public int getTopicId(String name) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: illegal start of expression
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: <identifier> expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: not a statement
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: illegal start of expression
+    public int getSubscriberId(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                              ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: <identifier> expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                  ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: not a statement
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: <identifier> expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: not a statement
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: <identifier> expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: not a statement
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: '.class' expected
+    public static void main(String[] args) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:510: error: reached end of file while parsing
+}
+ ^
+87 errors
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+  ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: > expected
+=======
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+   ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: ';' expected
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+                                                ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:112: error: ';' expected
+                        new Thread() {
+                                    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:114: error: ';' expected
+                            public void run() {
+                                           ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:120: error: illegal start of expression
+                        }.start();
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: illegal start of expression
+    public DbConnection()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: ';' expected
+    public DbConnection()
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: not a statement
+    public void insertEvent(int topicId, String title, String content)
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: illegal start of expression
+    public ArrayList<Event> getAllEvents() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: ';' expected
+    public ArrayList<Event> getAllEvents() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: illegal start of expression
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: illegal start of expression
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                   ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: not a statement
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                             ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: not a statement
+    public void insertTopic(String name, String keywords) {
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: illegal start of expression
+    public ArrayList<Topic> getAllTopics() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: ';' expected
+    public ArrayList<Topic> getAllTopics() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: illegal start of expression
+    public int getTopicId(String name) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: illegal start of expression
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: <identifier> expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: not a statement
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: illegal start of expression
+    public int getSubscriberId(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                              ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: <identifier> expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                  ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: not a statement
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: <identifier> expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: not a statement
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: <identifier> expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: not a statement
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: '.class' expected
+    public static void main(String[] args) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:510: error: reached end of file while parsing
+}
+ ^
+87 errors
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+  ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: > expected
+=======
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+   ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: ';' expected
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+                                                ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:112: error: ';' expected
+                        new Thread() {
+                                    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:114: error: ';' expected
+                            public void run() {
+                                           ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:120: error: illegal start of expression
+                        }.start();
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: illegal start of expression
+    public DbConnection()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: ';' expected
+    public DbConnection()
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: not a statement
+    public void insertEvent(int topicId, String title, String content)
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: illegal start of expression
+    public ArrayList<Event> getAllEvents() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: ';' expected
+    public ArrayList<Event> getAllEvents() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: illegal start of expression
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: illegal start of expression
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                   ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: not a statement
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                             ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: not a statement
+    public void insertTopic(String name, String keywords) {
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: illegal start of expression
+    public ArrayList<Topic> getAllTopics() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: ';' expected
+    public ArrayList<Topic> getAllTopics() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: illegal start of expression
+    public int getTopicId(String name) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: illegal start of expression
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: <identifier> expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: not a statement
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: illegal start of expression
+    public int getSubscriberId(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                              ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: <identifier> expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                  ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: not a statement
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: <identifier> expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: not a statement
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: <identifier> expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: not a statement
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: '.class' expected
+    public static void main(String[] args) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:510: error: reached end of file while parsing
+}
+ ^
+87 errors
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+  ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: > expected
+=======
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+   ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: ';' expected
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+                                                ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:112: error: ';' expected
+                        new Thread() {
+                                    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:114: error: ';' expected
+                            public void run() {
+                                           ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:120: error: illegal start of expression
+                        }.start();
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: illegal start of expression
+    public DbConnection()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: ';' expected
+    public DbConnection()
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: not a statement
+    public void insertEvent(int topicId, String title, String content)
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: illegal start of expression
+    public ArrayList<Event> getAllEvents() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: ';' expected
+    public ArrayList<Event> getAllEvents() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: illegal start of expression
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: illegal start of expression
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                   ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: not a statement
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                             ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: not a statement
+    public void insertTopic(String name, String keywords) {
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: illegal start of expression
+    public ArrayList<Topic> getAllTopics() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: ';' expected
+    public ArrayList<Topic> getAllTopics() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: illegal start of expression
+    public int getTopicId(String name) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: illegal start of expression
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: <identifier> expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: not a statement
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: illegal start of expression
+    public int getSubscriberId(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                              ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: <identifier> expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                  ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: not a statement
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: <identifier> expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: not a statement
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: <identifier> expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: not a statement
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: '.class' expected
+    public static void main(String[] args) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:510: error: reached end of file while parsing
+}
+ ^
+87 errors
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+  ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:106: error: illegal start of expression
+<<<<<<< HEAD
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: > expected
+=======
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:108: error: illegal start of expression
+=======
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+   ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: illegal start of expression
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+      ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:110: error: ';' expected
+>>>>>>> dac5ecf67b72d4d84ecb27637564f01a3022a483
+                                                ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:112: error: ';' expected
+                        new Thread() {
+                                    ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:114: error: ';' expected
+                            public void run() {
+                                           ^
+./src/edu/rit/CSCI652/impl/UDPSystem.java:120: error: illegal start of expression
+                        }.start();
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: illegal start of expression
+    public DbConnection()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: ';' expected
+    public DbConnection()
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: not a statement
+    public void insertEvent(int topicId, String title, String content)
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: illegal start of expression
+    public ArrayList<Event> getAllEvents() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: ';' expected
+    public ArrayList<Event> getAllEvents() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: illegal start of expression
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: illegal start of expression
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                   ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: not a statement
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                             ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: not a statement
+    public void insertTopic(String name, String keywords) {
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: illegal start of expression
+    public ArrayList<Topic> getAllTopics() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: ';' expected
+    public ArrayList<Topic> getAllTopics() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: illegal start of expression
+    public int getTopicId(String name) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: illegal start of expression
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: <identifier> expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: not a statement
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: illegal start of expression
+    public int getSubscriberId(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                              ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: <identifier> expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                  ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: not a statement
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: <identifier> expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: not a statement
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: <identifier> expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: not a statement
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: '.class' expected
+    public static void main(String[] args) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:510: error: reached end of file while parsing
+}
+ ^
+87 errors
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: illegal start of expression
+    public DbConnection()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: ';' expected
+    public DbConnection()
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: not a statement
+    public void insertEvent(int topicId, String title, String content)
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: illegal start of expression
+    public ArrayList<Event> getAllEvents() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: ';' expected
+    public ArrayList<Event> getAllEvents() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: illegal start of expression
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: illegal start of expression
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                   ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: not a statement
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                             ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: not a statement
+    public void insertTopic(String name, String keywords) {
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: illegal start of expression
+    public ArrayList<Topic> getAllTopics() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: ';' expected
+    public ArrayList<Topic> getAllTopics() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: illegal start of expression
+    public int getTopicId(String name) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: illegal start of expression
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: <identifier> expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: not a statement
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: illegal start of expression
+    public int getSubscriberId(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                              ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: <identifier> expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                  ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: not a statement
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: <identifier> expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: not a statement
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: <identifier> expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: not a statement
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: '.class' expected
+    public static void main(String[] args) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:510: error: reached end of file while parsing
+}
+ ^
+74 errors
+./create.sh: line 17: syntax error near unexpected token `then'
+./create.sh: line 17: `then'
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: illegal start of expression
+    public DbConnection()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:28: error: ';' expected
+    public DbConnection()
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: illegal start of expression
+    public static void createDatabase()
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:46: error: ';' expected
+    public static void createDatabase()
+                                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: illegal start of expression
+    public void insertEvent(int topicId, String title, String content)
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: not a statement
+    public void insertEvent(int topicId, String title, String content)
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:61: error: ';' expected
+    public void insertEvent(int topicId, String title, String content)
+                                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: illegal start of expression
+    public ArrayList<Event> getAllEvents() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:77: error: ';' expected
+    public ArrayList<Event> getAllEvents() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: illegal start of expression
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:103: error: ';' expected
+    public ArrayList<Event> getAllEventsForSubscriber(String ipAddress) {
+                                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: illegal start of expression
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                   ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: not a statement
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                             ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:159: error: ';' expected
+    public ArrayList<Event> getAllEventsFromKeyword(String ipAddress, String keyword) {
+                                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: illegal start of expression
+    public void insertTopic(String name, String keywords) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: not a statement
+    public void insertTopic(String name, String keywords) {
+                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:232: error: ';' expected
+    public void insertTopic(String name, String keywords) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: illegal start of expression
+    public ArrayList<Topic> getAllTopics() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:248: error: ';' expected
+    public ArrayList<Topic> getAllTopics() {
+                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: illegal start of expression
+    public int getTopicId(String name) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:273: error: ';' expected
+    public int getTopicId(String name) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: illegal start of expression
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: <identifier> expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: not a statement
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:294: error: ';' expected
+    public ArrayList<Topic> getSubscriberTopics(int sub_id, boolean isSubscribed) {
+                                                                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: illegal start of expression
+    public int getSubscriberId(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                              ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:327: error: ';' expected
+    public int getSubscriberId(String ipaddress) {
+                                               ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: illegal start of expression
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: <identifier> expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                  ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: not a statement
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                        ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:349: error: ';' expected
+    public void insertSubscriber(String ipaddress, long lastactivedatetime) {
+                                                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: illegal start of expression
+    public void updateSubscriberLastActive(String ipaddress) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                          ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:367: error: ';' expected
+    public void updateSubscriberLastActive(String ipaddress) {
+                                                           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: illegal start of expression
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: <identifier> expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: not a statement
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:382: error: ';' expected
+    public void insertSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: illegal start of expression
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: <identifier> expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: not a statement
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                      ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:397: error: ';' expected
+    public void removeSubscriberTopic(int sub_id, int top_id) {
+                                                            ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: illegal start of expression
+    public static void createTables() {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:413: error: ';' expected
+    public static void createTables() {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+    ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: illegal start of expression
+    public static void main(String[] args) {
+           ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                 ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: '.class' expected
+    public static void main(String[] args) {
+                                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:466: error: ';' expected
+    public static void main(String[] args) {
+                                         ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:510: error: reached end of file while parsing
+}
+ ^
+74 errors
+./create.sh: line 17: syntax error near unexpected token `then'
+./create.sh: line 17: `then'
+Compiled..
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Stop one or more running containers
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:4fa25d41b1f42fb749324737ddf17c3884ab98d7ae29b3a3f5f11168340d796f
+Deleted: sha256:729f45c10c8878af77b3fb6cbe3985124de4d8996ba9f77cbc03c3d50c79c96b
+Deleted: sha256:d03336c5503a79da268ba72af97f61ac8a60279120030c59e7551414e006839b
+Deleted: sha256:f94211bbc47bd694a8299d3f193c549759c4fc87cc0287fbda6d066f457d625b
+Deleted: sha256:4fb890b9a084d56a83f6ec20832f5347839a9527deac7cc14167f0d385b93280
+Deleted: sha256:2a0716423541765da300fd8f9ae31a2adbed23b205509f1dc77272ceb7e9b53b
+Deleted: sha256:c37cacf57f73bc279852924541d5890496af4692499b2a65349f8e4941d5f87d
+Untagged: pubsub_em:latest
+Deleted: sha256:0601afcf99ef627554ce942d5007cdab625d7f7345333b65b481336c3efb0747
+Deleted: sha256:43a87fa79016d4d2dcd916c2bcd333be80907b7c8216cc6d24a6e7a7b7d7aba3
+Deleted: sha256:29984fa49be8946411960d84b8cd272ccfa3d9e55eb7cb4bd23864d1dc1deae4
+Deleted: sha256:c788fe2e46801691a0e14830127ff249fe0a1c38537302e2a38a17c898887418
+Deleted: sha256:110942389910a2c7c1c725e128203131398b1b3adff57291bb80bdf10d5e96ef
+Deleted: sha256:d6e781b140dba756d207bc96b1fc72576b61230d729cdac131be2b4118b31f93
+Deleted: sha256:b2c5e16b719ac0738b5fcf3380ec86f64ec3f68c10864420fb8964315adb5f33
+Deleted: sha256:5cd07932c828946aa44bd6c3b4f2424e33f270f7624d5432e78ec30ea3e8ec76
+Sending build context to Docker daemon  14.47MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 9fd078801f94
+Removing intermediate container 9fd078801f94
+ ---> 49c5a6e1d2c4
+Step 3/8 : COPY . project
+ ---> 940ff87fa54c
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 16817de2e935
+Removing intermediate container 16817de2e935
+ ---> 0b38f581272f
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in a6e296814fe0
+Removing intermediate container a6e296814fe0
+ ---> 39dc54ebd2ce
+Step 6/8 : EXPOSE 8079
+ ---> Running in f924c034c739
+Removing intermediate container f924c034c739
+ ---> cf82f7bc52a6
+Step 7/8 : WORKDIR /project
+Removing intermediate container 38baa3b5fb29
+ ---> 555a9c60b582
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in e50dbf119e7d
+Removing intermediate container e50dbf119e7d
+ ---> 92b421c130b4
+Successfully built 92b421c130b4
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.47MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 49c5a6e1d2c4
+Step 3/8 : COPY . project
+ ---> ae0cc51a3d46
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 095fe7f37589
+Removing intermediate container 095fe7f37589
+ ---> 4ef8f6f4628c
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 84c69c80a356
+Removing intermediate container 84c69c80a356
+ ---> a41aa82dc824
+Step 6/8 : EXPOSE 8079
+ ---> Running in d90d0c981d4e
+Removing intermediate container d90d0c981d4e
+ ---> 39f2f2bfa102
+Step 7/8 : WORKDIR /project
+Removing intermediate container ebfe21cd5cf0
+ ---> b46f28a13193
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 0f436fed4364
+Removing intermediate container 0f436fed4364
+ ---> cbce3fef6e96
+Successfully built cbce3fef6e96
+Successfully tagged pubsub_sub:latest
+Compiled..
+c384c5fa98cc
+fdaf89dbc9d6
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:cbce3fef6e966907b9ba90630a037733abe5cf9e72b20facf76e209cc1bc87cb
+Deleted: sha256:b46f28a131936b617e7d657ad4be8cd65404242d958eeaf59ef2a83abdbafd5c
+Deleted: sha256:39f2f2bfa10246564f1aa74603601175a370709037b886c99c1ed2c9feab40bf
+Deleted: sha256:a41aa82dc82441f002ec0b1016ac227875217cfdcc0ad511a86ca487a0b6004a
+Deleted: sha256:4ef8f6f4628cabeda4d3236c91f4c2c57d886faf8ddf00602aeaac12d223f704
+Deleted: sha256:ae0cc51a3d460a702d216725d5efa582d60c36909d1372403c26cc520a3b8c62
+Deleted: sha256:0ab01d082eed38a4156fee65f32fa70ba677b135e4e88875e93b9ed581e7e3f0
+Untagged: pubsub_em:latest
+Deleted: sha256:92b421c130b4b81a003b9d4500427d3f643dfca8b2e59b722a89dafa6f84fc7a
+Deleted: sha256:555a9c60b58299ab21fbc48595a73fdff55b950d8437ca301959eb8ede3f0802
+Deleted: sha256:cf82f7bc52a67db5f4604d5e0d53a835716d17718076c94a778ae6a76fbd3458
+Deleted: sha256:39dc54ebd2cec3b60e0a39f8d90090cfa3f1624de105c55a540bfd75ae0b7d52
+Deleted: sha256:0b38f581272f5bc0b713414a5943a903c2369c51dec9c5f206bef720046d22eb
+Deleted: sha256:940ff87fa54c0eafe012d911a0b2dd64b32af0d5a6bb78ab8adbd7f80277490e
+Deleted: sha256:85baab9d426cdf605c7202c1b63f1e13d70c898a41c4effb2e284bed3f5fceca
+Deleted: sha256:49c5a6e1d2c41d04c05f6cf4e8cc749f00f5ab519cb5c444f0333a7de73e7e4d
+Sending build context to Docker daemon  14.47MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 457c32f9d065
+Removing intermediate container 457c32f9d065
+ ---> c1c735b2e898
+Step 3/8 : COPY . project
+ ---> d9848399d0c3
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 18beb686a8f5
+Removing intermediate container 18beb686a8f5
+ ---> 0f6649518790
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in c57d92fa4a30
+Removing intermediate container c57d92fa4a30
+ ---> 637e7f819b4b
+Step 6/8 : EXPOSE 8079
+ ---> Running in ec3ab9927919
+Removing intermediate container ec3ab9927919
+ ---> 4b88677bf566
+Step 7/8 : WORKDIR /project
+Removing intermediate container 6c96991edbf7
+ ---> 2db4bcc3ae60
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 7506b6163cda
+Removing intermediate container 7506b6163cda
+ ---> be6afbaa9d1e
+Successfully built be6afbaa9d1e
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.47MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> c1c735b2e898
+Step 3/8 : COPY . project
+ ---> 1b7ac1deb32e
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 84d454f55a9f
+Removing intermediate container 84d454f55a9f
+ ---> cb08e08b5a5e
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 57f13807dcda
+Removing intermediate container 57f13807dcda
+ ---> 3c6a8415f2c0
+Step 6/8 : EXPOSE 8079
+ ---> Running in 77a8fc9b5932
+Removing intermediate container 77a8fc9b5932
+ ---> 49b485728dc7
+Step 7/8 : WORKDIR /project
+Removing intermediate container 40ab771473fc
+ ---> 3edc8294bf9b
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in ae80d4e9f455
+Removing intermediate container ae80d4e9f455
+ ---> 80b4f4418b45
+Successfully built 80b4f4418b45
+Successfully tagged pubsub_sub:latest
+Compiled..
+87092bc58af6
+705c8e3ef7bd
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:80b4f4418b45f48a20174deb2f5725ca40658e060d46714e8a80d74744898655
+Deleted: sha256:3edc8294bf9bce389c890c563f6513bf390c49396d54d53f25360b7293341d7b
+Deleted: sha256:49b485728dc75647e99a001858560feb8f5e826077b5227a6d162ab2c8d7fa41
+Deleted: sha256:3c6a8415f2c023912aafbf65a90edca1d27842953b2cd9bfab98f0a8ffe3aee3
+Deleted: sha256:cb08e08b5a5e72413ab9fe05964d49c949021377cc3d70cf1175d10a27015cb0
+Deleted: sha256:1b7ac1deb32efdc79e1e1823dc2b8c53e715c4d4ec2ae12fed857f732f1f6e54
+Deleted: sha256:42fb635bbf0ac5e1306622f85a9b7b1990296b786ba6392d2f113d6a2ea557c4
+Untagged: pubsub_em:latest
+Deleted: sha256:be6afbaa9d1e8ab2ceb1ea8ef6fb8ec2a13ca125c760991e6b29fa0f0dc6b664
+Deleted: sha256:2db4bcc3ae609704aed6ddd69ed95541773254eb72963efe6e2d460b2e96bc1f
+Deleted: sha256:4b88677bf566689a8ac278d593ff2ec842c973b326907224f341d5a4e578592a
+Deleted: sha256:637e7f819b4bddfbb590a6cee53f1ca0a147bd0406aa5d84b224cf944b8c2f81
+Deleted: sha256:0f66495187904d9df2796c7a5ab258de9e1288abbbf3eeaad6df60730f600609
+Deleted: sha256:d9848399d0c3c6d358514511926037fe91b950831f8eba4da572a175b99570b0
+Deleted: sha256:27c01696452b2d4dfa8fe5cc80bc9af960795852ab816aa62cb804beaae8d3af
+Deleted: sha256:c1c735b2e8988e95c4b37f07589cc2c548e5e1ed67b6b0b97adaa27854d34c6a
+Sending build context to Docker daemon  14.48MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in d879acbc9da2
+Removing intermediate container d879acbc9da2
+ ---> 651459eaa4df
+Step 3/8 : COPY . project
+ ---> 6e7d17ff8ad2
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 1458e04811f6
+Removing intermediate container 1458e04811f6
+ ---> 942ef05e7939
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 2f73ceb23a78
+Removing intermediate container 2f73ceb23a78
+ ---> 559bba828635
+Step 6/8 : EXPOSE 8079
+ ---> Running in ad3637c19ce5
+Removing intermediate container ad3637c19ce5
+ ---> 45aacd2e8ca9
+Step 7/8 : WORKDIR /project
+Removing intermediate container 44866ffe5f29
+ ---> 6afdc667544b
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in db4087153d0f
+Removing intermediate container db4087153d0f
+ ---> 9e2809f71b1e
+Successfully built 9e2809f71b1e
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.48MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 651459eaa4df
+Step 3/8 : COPY . project
+ ---> e1707dea5ed7
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 0229d7c0f8eb
+Removing intermediate container 0229d7c0f8eb
+ ---> 6439a6252d4a
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 874b4bdb95e4
+Removing intermediate container 874b4bdb95e4
+ ---> d8647040c347
+Step 6/8 : EXPOSE 8079
+ ---> Running in 5cff83c84237
+Removing intermediate container 5cff83c84237
+ ---> 57b76bd0e0bc
+Step 7/8 : WORKDIR /project
+Removing intermediate container 6bcf94ef214b
+ ---> 4870f0b584f9
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 812970e09ee5
+Removing intermediate container 812970e09ee5
+ ---> b4a3ed1ba4a2
+Successfully built b4a3ed1ba4a2
+Successfully tagged pubsub_sub:latest
+Compiled..
+Compiled..
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Stop one or more running containers
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:2429a69397987ff251be59e9c8d4fc78c3d7070890d8037a61418e6c627dd97f
+Deleted: sha256:eb53fd1ec5974ab1789da087a7854b0cb7ea221abd69fb4faf93fd274b454bb1
+Deleted: sha256:eedfb0c495f92295f956408dd0ec53f7f29327a4192d820f7061b3eac621cb1b
+Deleted: sha256:6258ceb2bb3d31ead55a4d332ddc4300a97a2753da3649051eba02eade82a2ca
+Untagged: pubsub_em:latest
+Deleted: sha256:79fe66b24314d2e989cc8d1def842190025e9004c4aca76618f3d87efc6710ae
+Deleted: sha256:29524d665fdf5c9b8a6be9134ca60876d30fc3ef3cb5be24455caa99fa36e9e2
+Deleted: sha256:c8cf857ec5e7f3ada75d0818d99632bc30917e8b12510995b9c69707a0b344a3
+Deleted: sha256:ca57ae90652df2c4cf87b62bd4bcf496a07fce5dad97243b73d9f75a1a20fd3b
+Deleted: sha256:ce0b5a30f51df5705cb5dd750935c0113c4935cd53d43cac6db1cef3cb88dacb
+Deleted: sha256:2b10364645db56160ee0797836056591361d738b6f7469b1cfeea1c198268252
+Deleted: sha256:fd736361e578b9bf77c97e4d0e9d29375cc73cc67b2c8dc82e528c03a20e7ff4
+Deleted: sha256:e88cba25909b4d62deab9bc2f6242f104dfaef3cdda7fec93191a160e92ae959
+Sending build context to Docker daemon  14.48MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 13f179ded694
+Removing intermediate container 13f179ded694
+ ---> afdce3492d46
+Step 3/8 : COPY . project
+ ---> 71790f40f2aa
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in fc157631fe29
+Removing intermediate container fc157631fe29
+ ---> 26aa6b99d396
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in b86a5ba0b426
+Removing intermediate container b86a5ba0b426
+ ---> d9af3f01dfd1
+Step 6/8 : EXPOSE 8079
+ ---> Running in 23d8c066b244
+Removing intermediate container 23d8c066b244
+ ---> a8e185009bbb
+Step 7/8 : WORKDIR /project
+Removing intermediate container 3482e85baedd
+ ---> 582e9a38107a
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in c08d75b2729c
+Removing intermediate container c08d75b2729c
+ ---> 415daa06f448
+Successfully built 415daa06f448
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.48MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> afdce3492d46
+Step 3/8 : COPY . project
+ ---> 0c2a6eb3f073
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in b1417538d37e
+Removing intermediate container b1417538d37e
+ ---> ed0e209c8bf1
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 8193d2dadefd
+Removing intermediate container 8193d2dadefd
+ ---> 3ea96c18c718
+Step 6/8 : EXPOSE 8079
+ ---> Running in eeffa829ec03
+Removing intermediate container eeffa829ec03
+ ---> 5d89e5f61ae1
+Step 7/8 : WORKDIR /project
+Removing intermediate container a60d55be0968
+ ---> ad98a0187189
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 916c25cd2dcb
+Removing intermediate container 916c25cd2dcb
+ ---> d1f236f14bbc
+Successfully built d1f236f14bbc
+Successfully tagged pubsub_sub:latest
+Compiled..
+526efb9ae8a4
+2a9ba417e778
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:d1f236f14bbc1a8dea47099ea9961508ca659ffce37b9d0bd056b1b735243a0a
+Deleted: sha256:ad98a0187189539bde459d8ffa97208284a9776b6103b936cde5030fabf3e32d
+Deleted: sha256:5d89e5f61ae138af038e47cc92afbe65c3316ce6f12fa3e366f4ed715b83bd0b
+Deleted: sha256:3ea96c18c718b755b7ed4c36ad76e289dfeddf199fda2478bbf4257553a323eb
+Deleted: sha256:ed0e209c8bf146c3f15aeb583501167ccd77fa96c3463e957ca4a54beb82b817
+Deleted: sha256:0c2a6eb3f0738339497b34c6c14213abf3ceb9d3873e89042b3c69f297201a95
+Deleted: sha256:125dc6de865651b2978b3bce1a0dbf1e1a8c845bf0d9be4f74b76e34fc969918
+Untagged: pubsub_em:latest
+Deleted: sha256:415daa06f448c0729a3da3f9447d08a831a34041987c81f1362137853c65d867
+Deleted: sha256:582e9a38107aba10d0b9be03f06a757fb1256fb7bd64664af6f4569f05f919e7
+Deleted: sha256:a8e185009bbbe08098bee5d8850519a7ad96a47436c83c5a7fab8d5a39427807
+Deleted: sha256:d9af3f01dfd12a03b7a4e5c774a20195cf742ddc4b68c18e1059c7e4978da3bf
+Deleted: sha256:26aa6b99d3968d6875a63639a39ad75ad261bb3144cc3d40fd9a5d00958211cd
+Deleted: sha256:71790f40f2aa05820d419e88e86f660e607fbe7e048d986682f02ea6fa58662b
+Deleted: sha256:d11ead01af13dee3cc3f7d462d9128bf64e6aeb71cc9aced172896fb067cc1be
+Deleted: sha256:afdce3492d462ab923f868a8e1a6c5632cae2008a291ad45500fb58e3e4eee13
+Sending build context to Docker daemon  14.48MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in fe3e91a898b8
+Removing intermediate container fe3e91a898b8
+ ---> 338c1f6a9be9
+Step 3/8 : COPY . project
+ ---> ea82902b7324
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 23abafa5797c
+Removing intermediate container 23abafa5797c
+ ---> 4fc71c4ed40c
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in f92a76c1e6e7
+Removing intermediate container f92a76c1e6e7
+ ---> 2e543489f05e
+Step 6/8 : EXPOSE 8079
+ ---> Running in d06791dfa700
+Removing intermediate container d06791dfa700
+ ---> 5bd88bf9920e
+Step 7/8 : WORKDIR /project
+Removing intermediate container e5323e525281
+ ---> 2fae28be4e64
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 771510b7b839
+Removing intermediate container 771510b7b839
+ ---> 49de4fe4dc48
+Successfully built 49de4fe4dc48
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.48MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 338c1f6a9be9
+Step 3/8 : COPY . project
+ ---> 8a2fd3923b28
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 17e5ed0c8443
+Removing intermediate container 17e5ed0c8443
+ ---> d45304abccb4
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 9a209a05bad4
+Removing intermediate container 9a209a05bad4
+ ---> 5a6b796f9ea7
+Step 6/8 : EXPOSE 8079
+ ---> Running in 2af88a1e0fb3
+Removing intermediate container 2af88a1e0fb3
+ ---> d0f4878d317a
+Step 7/8 : WORKDIR /project
+Removing intermediate container d77e63ff0624
+ ---> d4053c2cb45e
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 097c32146bae
+Removing intermediate container 097c32146bae
+ ---> 8dcc6b1d179b
+Successfully built 8dcc6b1d179b
+Successfully tagged pubsub_sub:latest
+Compiled..
+52d4251e4a22
+ee56cb79fae1
+ea05823343f1
+52d4251e4a22
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:8dcc6b1d179b0b331d069e75271a2336272b3560b7d00cbd1988cff9692d000a
+Deleted: sha256:d4053c2cb45eaccdd9f606666483b11a1830a0435db74adb9fc1a88fcd58f93c
+Deleted: sha256:d0f4878d317a75716141e91074f2a82573bd4d8abef88e13991549edaac190ca
+Deleted: sha256:5a6b796f9ea71b410a5ed2a64286dd2553f037c8339d5bf80612c3d6246d1182
+Deleted: sha256:d45304abccb40fc2f67b6525a2838edb210490b30b1ecd6a4f3574a6e1ac0cda
+Deleted: sha256:8a2fd3923b2831cbb27e7523b5b5bde947cc3d862e59a6414850274425dbb545
+Deleted: sha256:1a3e86e2d42358f44b02f33fe2104873d4960b84cb451f0c9a5bc03736e798f7
+Untagged: pubsub_em:latest
+Deleted: sha256:49de4fe4dc482d51bd8daf6c3b577232b637c11ecb2c9c9367575a2bfa797750
+Deleted: sha256:2fae28be4e64710ee4e6b10da3fc2f53e729485ad2616d7759cfda9c46910876
+Deleted: sha256:5bd88bf9920e048d91de02f19c21379a6259d967603e54f7bbb0ca213d12bdf2
+Deleted: sha256:2e543489f05ee9707fc6790ab011ffb073f84e6f4a6de51409e5008f39b4d8ef
+Deleted: sha256:4fc71c4ed40c1e247017edc5a11109239c46e04f67c682f0a911a0996ce9833a
+Deleted: sha256:ea82902b732414fac3b3a382d013a6f2e0bc1f80e1febc84757585e65c3dcc10
+Deleted: sha256:b4dfd45f0ed2652d8b2f33bc9c2f4c1b3a7d704e6ba91d75d8bc04f88d9e08fc
+Deleted: sha256:338c1f6a9be9e39649a8610420a209a1999bbcafb52e97c2c882c1862552b9bf
+Sending build context to Docker daemon  14.49MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 85dac0e2b6b6
+Removing intermediate container 85dac0e2b6b6
+ ---> 4cdb21b53767
+Step 3/8 : COPY . project
+ ---> 7f7ced98c6d4
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 72cd8e2a917d
+Removing intermediate container 72cd8e2a917d
+ ---> 4b15c4a364d9
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 8408473879a5
+Removing intermediate container 8408473879a5
+ ---> b9184ffd3f4c
+Step 6/8 : EXPOSE 8079
+ ---> Running in 1d339b46b859
+Removing intermediate container 1d339b46b859
+ ---> 6764745baf4a
+Step 7/8 : WORKDIR /project
+Removing intermediate container 085492eb1c0d
+ ---> e278d75375a6
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in d6403da1f4e1
+Removing intermediate container d6403da1f4e1
+ ---> c654a4b4be8c
+Successfully built c654a4b4be8c
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.49MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 4cdb21b53767
+Step 3/8 : COPY . project
+ ---> 8a5202ba2f37
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 820f37a39a88
+Removing intermediate container 820f37a39a88
+ ---> f5a0045e1053
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in d7fbed03ee81
+Removing intermediate container d7fbed03ee81
+ ---> ab110c3c3941
+Step 6/8 : EXPOSE 8079
+ ---> Running in c4784487ccb3
+Removing intermediate container c4784487ccb3
+ ---> d05bde0a377e
+Step 7/8 : WORKDIR /project
+Removing intermediate container 4b50e6320a43
+ ---> 0ce1924e8a18
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 79c5c7dd6970
+Removing intermediate container 79c5c7dd6970
+ ---> ca12a89593cf
+Successfully built ca12a89593cf
+Successfully tagged pubsub_sub:latest
+Compiled..
+1efa845f4601
+8b0ba7ffb6c5
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:ca12a89593cf561dab754229b81b5d0ee8fa337abb57d7145fc84f8e260f9668
+Deleted: sha256:0ce1924e8a18ca4e72e18c95e78140aa14eab991bcc654bfa4cb48544f5852fa
+Deleted: sha256:d05bde0a377e15e0fb7232287bb06ad0d60dd6e539d44046fbdf9d4e92f61603
+Deleted: sha256:ab110c3c39410fa40086f469e499150efbc2336cf8cbc96f26eafb8272313a8c
+Deleted: sha256:f5a0045e10536992ef33eaaaf9cf7a3cba156daae6edf6a2a8b1949629cee447
+Deleted: sha256:8a5202ba2f3762b70d4f1d105647f1f0a157d00b9b370dfbce36990fd6590dbf
+Deleted: sha256:7af9321196fa18583f4427fdffc046399b9fbb9a23ca313cfd91aa1f7d175387
+Untagged: pubsub_em:latest
+Deleted: sha256:c654a4b4be8ca081ed21c704614b6d733d7be1329e393f4801cf0c5f14fff6fb
+Deleted: sha256:e278d75375a6591a34319cdf0bbbdf56dd1ddac7c72265008b99793ec2a99b0a
+Deleted: sha256:6764745baf4a8bc69a2b51e27854c980ff22b61809bb5fed2c0e4001c42b359f
+Deleted: sha256:b9184ffd3f4c3fb26e2165517fc2c05e60809cbe8ae5ce1946ff60af7fb03c64
+Deleted: sha256:4b15c4a364d92b4550112457635bc7ad3588b94d045bd13427b0e00c5a43e3c0
+Deleted: sha256:7f7ced98c6d4029ba85f8d1a1ec591c747b06546a1c5e23924f84ed6c98473d2
+Deleted: sha256:5c71dca7515391051466e58145bfee6c16120346b1985c4f3896922c8a9a33f4
+Deleted: sha256:4cdb21b53767736312e82a7aad0a35c4d3fe9e5d4214922a2627890030ecad38
+Sending build context to Docker daemon  14.59MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 89b981197515
+Removing intermediate container 89b981197515
+ ---> 62a7e69f5fc3
+Step 3/8 : COPY . project
+ ---> ba2d5932c957
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 7decad9e0ff5
+Removing intermediate container 7decad9e0ff5
+ ---> 084e20cdc7f0
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in ffa4bec8fc9e
+Removing intermediate container ffa4bec8fc9e
+ ---> b651289cffcf
+Step 6/8 : EXPOSE 8079
+ ---> Running in 92172da636d1
+Removing intermediate container 92172da636d1
+ ---> 4ea06b245ef8
+Step 7/8 : WORKDIR /project
+Removing intermediate container 1f66a777d659
+ ---> acc260d113bc
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in a7a41ef52d4d
+Removing intermediate container a7a41ef52d4d
+ ---> dc8967c31020
+Successfully built dc8967c31020
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.59MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 62a7e69f5fc3
+Step 3/8 : COPY . project
+ ---> b237eb4c31d0
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 5adc152b7852
+Removing intermediate container 5adc152b7852
+ ---> 8258ca7ec98d
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in a231d93248f8
+Removing intermediate container a231d93248f8
+ ---> b43defd04f1c
+Step 6/8 : EXPOSE 8079
+ ---> Running in 0bed4d9fdb06
+Removing intermediate container 0bed4d9fdb06
+ ---> 7bd6c3090d70
+Step 7/8 : WORKDIR /project
+Removing intermediate container 7d70a940a8d6
+ ---> 2eee71c7db6f
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in b7128c8cd0a6
+Removing intermediate container b7128c8cd0a6
+ ---> 1935475bd43c
+Successfully built 1935475bd43c
+Successfully tagged pubsub_sub:latest
+Compiled..
+e61a70af149f
+accd96fdccfc
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:1935475bd43c05d52a920446d9f522e1d04d1615a5f7365a58a021fd28edc0d3
+Deleted: sha256:2eee71c7db6f13f73114336a5b2a405e550411e9ec787c55b73ef3bd5f2a9db5
+Deleted: sha256:7bd6c3090d709a9730908a0249c3064c85b445a1949f6df91be5c21f2e6b3f1e
+Deleted: sha256:b43defd04f1c60d93d254154e3866f2a1066c74c889d9a97ea37f8f8aa9bd3b5
+Deleted: sha256:8258ca7ec98d263cf071d87dd1d1a6919c50accdf841e3f4daf96134920082a7
+Deleted: sha256:b237eb4c31d0a9a9a85e3143c2e2f1869b333e677866c108d7686594fe0ea844
+Deleted: sha256:1eccc4dda088a4c8d61c9622b7e02571bb71cef99a4d50d0c3a29c9048ac958f
+Untagged: pubsub_em:latest
+Deleted: sha256:dc8967c310206e2738194f7b33cc190a23ea54ee526357fd04008113410c0637
+Deleted: sha256:acc260d113bc14c267703b7d78f425090ef01a14580bcf6b23ab53d63cbcb327
+Deleted: sha256:4ea06b245ef8d4bf5fed9962ec929511459d79adfeb2fce9c2ef46bfa7ed6447
+Deleted: sha256:b651289cffcf5522f0f5a1dc51094ba157c6823141cf9c86a348039e7ef42a27
+Deleted: sha256:084e20cdc7f07e05967f6e5e7ed272d61a71c6d3892ce62886694b4dd1694ce3
+Deleted: sha256:ba2d5932c9570afa98e70e8e268c75da5b41e618a46c3e6d9d94b594d886d0cd
+Deleted: sha256:99871c04e0c97c69f1d1a664607024165eb2d34b8b54f95c24ef64f9594ac6fd
+Deleted: sha256:62a7e69f5fc31328652e5af7a3ad2dbb8901040680119c56a0399ba6f8b1485c
+Sending build context to Docker daemon  14.59MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 995c8f8a382b
+Removing intermediate container 995c8f8a382b
+ ---> 0f4c7ab183ba
+Step 3/8 : COPY . project
+ ---> aa627ad562ea
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 84607b8c4b60
+Removing intermediate container 84607b8c4b60
+ ---> 198c976c9a82
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in bc9d06d306db
+Removing intermediate container bc9d06d306db
+ ---> 7ce84acfcf2b
+Step 6/8 : EXPOSE 8079
+ ---> Running in 5bbcc14ac44b
+Removing intermediate container 5bbcc14ac44b
+ ---> d70331e94099
+Step 7/8 : WORKDIR /project
+Removing intermediate container 8e4b6f8f1be8
+ ---> 1bbb30ed5987
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 4a1542dadaae
+Removing intermediate container 4a1542dadaae
+ ---> 0189e81947cd
+Successfully built 0189e81947cd
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.59MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 0f4c7ab183ba
+Step 3/8 : COPY . project
+ ---> f45477332d6a
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 850b68eab83d
+Removing intermediate container 850b68eab83d
+ ---> 2aca54b33ba7
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 02eff6a566f8
+Removing intermediate container 02eff6a566f8
+ ---> b445d9dc1eec
+Step 6/8 : EXPOSE 8079
+ ---> Running in c96eabe5bf04
+Removing intermediate container c96eabe5bf04
+ ---> 34edf6abe48d
+Step 7/8 : WORKDIR /project
+Removing intermediate container 38bc9f7e363f
+ ---> 843b33c19c4b
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 886bbf690d92
+Removing intermediate container 886bbf690d92
+ ---> d55a9af2f60f
+Successfully built d55a9af2f60f
+Successfully tagged pubsub_sub:latest
+./src/edu/rit/CSCI652/impl/DbConnection.java:50: error: ')' expected
+		Logging.print("ERROR"!!);
+		                     ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:50: error: illegal start of expression
+		Logging.print("ERROR"!!);
+		                       ^
+./src/edu/rit/CSCI652/impl/DbConnection.java:50: error: not a statement
+		Logging.print("ERROR"!!);
+		                      ^
+3 errors
+Compiled..
+f378b4e01fda
+4a9ad8aa08ec
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:d55a9af2f60f396daaf5f8b0b5606b80c4eb275da12241c6d87a8eb74ecc2afc
+Deleted: sha256:843b33c19c4b14f0ecfeeffb3661b2fc6f0e3c0f53df32b57892cca483f345d1
+Deleted: sha256:34edf6abe48dce98400cbbcf434d94ec248c6947702efe15859dc03c3423089b
+Deleted: sha256:b445d9dc1eec67d68bd6c96d7261b4b1251e7984ea2e660b51054ed5dd8ea0e8
+Deleted: sha256:2aca54b33ba73a3018bf77b9882843a35f3ef7e99e8e39f4020537cb10462953
+Deleted: sha256:f45477332d6a47a33412afcbd4bc47d0c32e670a13f6eacac550e35ebabde4db
+Deleted: sha256:0fd5b1aa8a2ece0d152f4a97ac3e70b0ecd0afae810e205ef1b67394a2a26a36
+Untagged: pubsub_em:latest
+Deleted: sha256:0189e81947cdc517df292fa0a336b72e018f4f61b025dccfa0ae1a9b86d4770e
+Deleted: sha256:1bbb30ed5987a468894191df01f38d62c663494131e222108ee975741c6f668a
+Deleted: sha256:d70331e94099d3855f32a8f9344e03e35d2ed230aba0127098e4c3985b85120a
+Deleted: sha256:7ce84acfcf2b89672a02496633e1b16b5f367b5b1919da1da0717a7f73cac2fd
+Deleted: sha256:198c976c9a8273ad806bf1e8f1ab7affc32e40e123278efe56e87c1185c14ea7
+Deleted: sha256:aa627ad562ea8b8c2440218dd3a307e95a2b164cd4b54e2864213a207bd0412e
+Deleted: sha256:c63cbffe3b044d4b8dac0888ba7eb3f809ee44ffa594117588cfb436a053f755
+Deleted: sha256:0f4c7ab183bad05b03e6b07310aeb1159785f4779c2f0aa0f3eded765c5284d6
+Sending build context to Docker daemon  14.63MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in ccf935441903
+Removing intermediate container ccf935441903
+ ---> 2a969d1f8bf5
+Step 3/8 : COPY . project
+ ---> 7c7276a169b6
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 5646af5bb7e7
+Removing intermediate container 5646af5bb7e7
+ ---> 0c79acae7b42
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 2277a0098c71
+Removing intermediate container 2277a0098c71
+ ---> 605960590da2
+Step 6/8 : EXPOSE 8079
+ ---> Running in 961d85f134f8
+Removing intermediate container 961d85f134f8
+ ---> f67780159614
+Step 7/8 : WORKDIR /project
+Removing intermediate container 10411c0b1799
+ ---> 311f876a52ad
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 8e693da30943
+Removing intermediate container 8e693da30943
+ ---> 05ef2d6f9419
+Successfully built 05ef2d6f9419
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.63MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 2a969d1f8bf5
+Step 3/8 : COPY . project
+ ---> 99e550a90356
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 95173a4c6563
+Removing intermediate container 95173a4c6563
+ ---> 4cfe36ce55d2
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 6f082eaa226c
+Removing intermediate container 6f082eaa226c
+ ---> 887628d3ac92
+Step 6/8 : EXPOSE 8079
+ ---> Running in f792dbc6977a
+Removing intermediate container f792dbc6977a
+ ---> bdaed0de6848
+Step 7/8 : WORKDIR /project
+Removing intermediate container d0d4dd1c3d0a
+ ---> eeb53d524ede
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in ea1d3a27c84d
+Removing intermediate container ea1d3a27c84d
+ ---> 28668dabc706
+Successfully built 28668dabc706
+Successfully tagged pubsub_sub:latest
+Compiled..
+172572e97f82
+96b93cacc7ba
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:28668dabc7063bff40a772f728f2df78e1137ee1fe9f2bd82dddb21f98dcd81f
+Deleted: sha256:eeb53d524ede99668b072a44f8eb4e9cd50db28e56657a9863aa5120baface40
+Deleted: sha256:bdaed0de68487e51138ead92511660ee85203588e2f5bb46adb4463f5d4c18e5
+Deleted: sha256:887628d3ac92a15e084c1ffdf7e36dce3041d138ed8e0b91ab8d9d771cdb5333
+Deleted: sha256:4cfe36ce55d2047b9f8ac6359fb1cba5c094b05fc6967c4f7d71fbd5c3d91ae6
+Deleted: sha256:99e550a9035680c59eb33ef8eaf77a5e985692b0eed109155a3f84019dc2b960
+Deleted: sha256:27321f93830b40f7e2e7ecba68737569563b4e538de444436821ca4b927fbb70
+Untagged: pubsub_em:latest
+Deleted: sha256:05ef2d6f94190ad71a10efd18ae4dbb5d67875c60c2cb6e45698c634096897b2
+Deleted: sha256:311f876a52ad883b1c771b51ec6c4c7c05aa347063971134e6006e9eaf6b5a5c
+Deleted: sha256:f67780159614a3465b66e6c2329438f41fd6eb01b4c2fe52ede28fbee08c190c
+Deleted: sha256:605960590da222dcc993d1d1e3d2962548b932dc0b7f628af99f76eb148b52ca
+Deleted: sha256:0c79acae7b42f109ba649f5d3a2aa3be3458d57be83a598169d4ade50d951345
+Deleted: sha256:7c7276a169b62d7ac9f55e597b78264ab9788e1722ba07181f1dfdcb57182ce5
+Deleted: sha256:e3cba30ba6430d1ccec6ece27405b3498555890b3c059d0546942f7dd4275d3e
+Deleted: sha256:2a969d1f8bf5d9f152bbfef281c4311228907a27ac8fb7fa9bae601ee6713dbe
+Sending build context to Docker daemon  14.63MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 6257775955ec
+Removing intermediate container 6257775955ec
+ ---> d22c3335ce84
+Step 3/8 : COPY . project
+ ---> 92cf8bc2021b
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 32611aacaa31
+Removing intermediate container 32611aacaa31
+ ---> 0bf78c855a74
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 6ed653a49c66
+Removing intermediate container 6ed653a49c66
+ ---> df04bca44366
+Step 6/8 : EXPOSE 8079
+ ---> Running in d6d598a927a4
+Removing intermediate container d6d598a927a4
+ ---> f3fcf96e881c
+Step 7/8 : WORKDIR /project
+Removing intermediate container 1976fe5a0481
+ ---> 2d308cafb92d
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 87b0060dcf6e
+Removing intermediate container 87b0060dcf6e
+ ---> 1908a7326964
+Successfully built 1908a7326964
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.63MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> d22c3335ce84
+Step 3/8 : COPY . project
+ ---> 832379a507ce
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 0594dc558f22
+Removing intermediate container 0594dc558f22
+ ---> b85d42af2423
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in c78933e704db
+Removing intermediate container c78933e704db
+ ---> 2c61491292d9
+Step 6/8 : EXPOSE 8079
+ ---> Running in 7f0af3f1e958
+Removing intermediate container 7f0af3f1e958
+ ---> 549e16f1e820
+Step 7/8 : WORKDIR /project
+Removing intermediate container 6c0a08f26d59
+ ---> f4ad4b8c7673
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 8b35902cb707
+Removing intermediate container 8b35902cb707
+ ---> d8bd8fcd346c
+Successfully built d8bd8fcd346c
+Successfully tagged pubsub_sub:latest
+Compiled..
+12f4e031708a
+3f2131e2bf75
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:d8bd8fcd346c78630c4ab550095689ebd1c68f956b294e8a7fac109a49177630
+Deleted: sha256:f4ad4b8c7673c777a34a81697a8b4e079e26e2867417adaff145a52145b5449e
+Deleted: sha256:549e16f1e820c700b47728cd78c1fadece95ffc33c1bc1280443118e4cd5e581
+Deleted: sha256:2c61491292d9ebba1b21ce231ddfb0e7887fd0029c3e6eeaef3babbd3b6731fd
+Deleted: sha256:b85d42af2423f8ade8b6acc68c016eb859770b7c66ec378d8ed25b8c25c4662b
+Deleted: sha256:832379a507cea2cf59822c7fbc2928a60a1d735186d1214bba87b4c15ebf6f21
+Deleted: sha256:b7510174cb31e4b3490503b3e9413a78466a7f1aa38b9a07e24848e3c0e16751
+Untagged: pubsub_em:latest
+Deleted: sha256:1908a7326964497bdfa271fa829a7b8f5ddde9af76dce43662abf3f4f7f27fbf
+Deleted: sha256:2d308cafb92d0d205fc1626b6769fff7207ab4f58391dad147ca9c4e9f2d4d9b
+Deleted: sha256:f3fcf96e881ca236bf4d76507ed645c77914da8027e6e95990dc4a8f4cb7c7ee
+Deleted: sha256:df04bca443667faed315d2949ec0a51d8dc03a72f9aab1ebc52914fdd91de6cd
+Deleted: sha256:0bf78c855a745e88268044c3ad60555b766594948fe36d49944464e450b40593
+Deleted: sha256:92cf8bc2021be4241b3bacbed2876dda11f7677cc6956ff95d90cca1b3275793
+Deleted: sha256:0f5cb9bb6a925155659f04ba18ca01bd9277086768b17147964848602cfceb34
+Deleted: sha256:d22c3335ce84a87f19109427400e401c2b51239369cc3013573dbc71e2e60f59
+Sending build context to Docker daemon  14.64MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 884307a13f0b
+Removing intermediate container 884307a13f0b
+ ---> a5e4e4cf7b73
+Step 3/8 : COPY . project
+ ---> bb29f5e70d9f
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 4fde25b0588b
+Removing intermediate container 4fde25b0588b
+ ---> e1c9d43a1b07
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in a5be6c667574
+Removing intermediate container a5be6c667574
+ ---> ceb978fe72e7
+Step 6/8 : EXPOSE 8079
+ ---> Running in 81d5cc56ce25
+Removing intermediate container 81d5cc56ce25
+ ---> 439f66eb69e0
+Step 7/8 : WORKDIR /project
+Removing intermediate container 05f90f21f095
+ ---> d9779c7634b7
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 095d4917170b
+Removing intermediate container 095d4917170b
+ ---> 3cf59068a394
+Successfully built 3cf59068a394
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.64MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> a5e4e4cf7b73
+Step 3/8 : COPY . project
+ ---> a73acb63e3cc
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 60d254386909
+Removing intermediate container 60d254386909
+ ---> 069c11721612
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 7faaf58880b4
+Removing intermediate container 7faaf58880b4
+ ---> 815c89fce8f1
+Step 6/8 : EXPOSE 8079
+ ---> Running in c91692db3bac
+Removing intermediate container c91692db3bac
+ ---> 5c7ef4c7fac8
+Step 7/8 : WORKDIR /project
+Removing intermediate container 9fd9b892793d
+ ---> a1ecc9ddf728
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in a8b55fcdbb60
+Removing intermediate container a8b55fcdbb60
+ ---> ab28aa6a5e83
+Successfully built ab28aa6a5e83
+Successfully tagged pubsub_sub:latest
+Compiled..
+a0a0b6919fea
+c18974032fbe
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:ab28aa6a5e83ea323fd7df6d13003b1f194e6a3e2894414c90bfeec18e4519da
+Deleted: sha256:a1ecc9ddf728992b22dca6b23aca8f72c3924c60b980ee66ffb04abaea32da0d
+Deleted: sha256:5c7ef4c7fac8ab6fa544352d444573d1c2e6b740f17e147cb64647d3b7822cfc
+Deleted: sha256:815c89fce8f1e54e12c6d1461a2cd080ea1cda6936fa92405376a9738907f471
+Deleted: sha256:069c11721612e0cee285b02204bc73aa5eb81cdd60a96131e1e409fe619febbf
+Deleted: sha256:a73acb63e3cc2247c357330d4786567021dedfe6e16ae33820c1427762ebc3ac
+Deleted: sha256:6b14e8d6a51d4627dcd00f2c4d2bf7c2ca1e5a800845ce3514d35afc8f6bd361
+Untagged: pubsub_em:latest
+Deleted: sha256:3cf59068a39476d15712ac1e84b5ae7a146796f9360845a38cd071ff687e0755
+Deleted: sha256:d9779c7634b7f9a8f21857fe729c003cc48ecd1131096f8ee01ac10358ecbd77
+Deleted: sha256:439f66eb69e04209638905f4bc08d38965c6b0bfed655aa7fb2ea8506ee1f0fc
+Deleted: sha256:ceb978fe72e76926a4d6dfdd588972413e25c738bb4754f8b6dfb5a4eb43200b
+Deleted: sha256:e1c9d43a1b07259db2d7626d3d9b8389c42d52517e88f694bffd13fb8ce8ff6d
+Deleted: sha256:bb29f5e70d9f1626749f02ec20b0e9c59cd04a080adb8fe44f2f01f900c7f9a6
+Deleted: sha256:56f5836130c4cf7c6ad3b7e0846cafc799624b86c9b9967112048e5931b811e5
+Deleted: sha256:a5e4e4cf7b734aa098e2e07aae646ba8a032d1ed6e2f08ef8ad0d3ef1274631b
+Sending build context to Docker daemon  14.64MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in bca428fc7090
+Removing intermediate container bca428fc7090
+ ---> 38d217ba703b
+Step 3/8 : COPY . project
+ ---> a219902de49f
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in b65ac2cf7299
+Removing intermediate container b65ac2cf7299
+ ---> 3632bf969065
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 611e5423b627
+Removing intermediate container 611e5423b627
+ ---> 688d391b1d4f
+Step 6/8 : EXPOSE 8079
+ ---> Running in 2759ad04d765
+Removing intermediate container 2759ad04d765
+ ---> 205e0ec40f22
+Step 7/8 : WORKDIR /project
+Removing intermediate container 4332f82804a6
+ ---> fe9c22602a01
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 1dc2a33d485a
+Removing intermediate container 1dc2a33d485a
+ ---> dcdbbba76370
+Successfully built dcdbbba76370
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.64MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 38d217ba703b
+Step 3/8 : COPY . project
+ ---> c3c9c669c972
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 95cbb711ee7b
+Removing intermediate container 95cbb711ee7b
+ ---> 619fe9f85e11
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in c100896cf87f
+Removing intermediate container c100896cf87f
+ ---> 080f9aa17493
+Step 6/8 : EXPOSE 8079
+ ---> Running in 2720967095ad
+Removing intermediate container 2720967095ad
+ ---> b0b5c1a351f0
+Step 7/8 : WORKDIR /project
+Removing intermediate container e652ca46e053
+ ---> f6de85336049
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 61bcb351497d
+Removing intermediate container 61bcb351497d
+ ---> 6c01b35c17ea
+Successfully built 6c01b35c17ea
+Successfully tagged pubsub_sub:latest
+Compiled..
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Stop one or more running containers
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:6c01b35c17ea8fdb5d5cc60768cdcfc383dfa8978af4081c5192bc2defa91817
+Deleted: sha256:f6de85336049047f83c279441fb9fe35b34e2088d82ab852ba9ab5cb6fb27225
+Deleted: sha256:b0b5c1a351f0131a06e188835047e3faa03f06409801d724975e52c6fd1476be
+Deleted: sha256:080f9aa174935368fb1552afd672a19d2f6c9ca93bf561eb79a6d013050259f8
+Deleted: sha256:619fe9f85e11d219d34244437ee1c89fa1ffe4ac8a699df7b1e8c3b3de9a1682
+Deleted: sha256:c3c9c669c9728c78facd30134479fefa4f257f654f957e02afba8140c9571a9a
+Deleted: sha256:cc9eeeddb65e1e4cd76d4878583fbc62fb998794d011253c7a5e60c670d8a8dc
+Untagged: pubsub_em:latest
+Deleted: sha256:dcdbbba76370202ccdba281ea8d5f5c25e2d50a798728aae2a98eb1cb281e7fe
+Deleted: sha256:fe9c22602a015093d226bb9daf0d42168d409982f11f967355c696d1163197ca
+Deleted: sha256:205e0ec40f2208f2a7e6c6e6da2647386be8b66bba4cd5fc77dc1cedb6ca2700
+Deleted: sha256:688d391b1d4f41247f06251c22ff7d3ab0bf521ee0d81dd4ef7997020b1b6328
+Deleted: sha256:3632bf969065416a223cdbc080975d1d1c1b13e0617931b391202c42f029f316
+Deleted: sha256:a219902de49f3ef954d951f4cf838ca6890aacef9edcb22d228316a82e2f2afd
+Deleted: sha256:24fb242fffe571ed884c9264bb88619079762ebfb198816958126ee6fde61ae0
+Deleted: sha256:38d217ba703b23a182bc724bde22846cc5da4088c1316372df1d7f313266cf1a
+Sending build context to Docker daemon  14.64MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 31495e14cc9f
+Removing intermediate container 31495e14cc9f
+ ---> 0933748b4598
+Step 3/8 : COPY . project
+ ---> 1cdb193eed29
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 4ebce02832db
+Removing intermediate container 4ebce02832db
+ ---> bdff3413a0b1
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 0aefcf1c8ec5
+Removing intermediate container 0aefcf1c8ec5
+ ---> acb91f3c7892
+Step 6/8 : EXPOSE 8079
+ ---> Running in 5f7d15a6a1ea
+Removing intermediate container 5f7d15a6a1ea
+ ---> d68632eeea44
+Step 7/8 : WORKDIR /project
+Removing intermediate container 88dcc00fdcbb
+ ---> 0db80fd52360
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 961227c14a88
+Removing intermediate container 961227c14a88
+ ---> 13d7bd666fb7
+Successfully built 13d7bd666fb7
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.64MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 0933748b4598
+Step 3/8 : COPY . project
+ ---> 34a77b0e057e
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 31eb55742927
+Removing intermediate container 31eb55742927
+ ---> 9ab6274f04d9
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 575497940b6f
+Removing intermediate container 575497940b6f
+ ---> 036cb8271d4a
+Step 6/8 : EXPOSE 8079
+ ---> Running in 4cc70b393ec9
+Removing intermediate container 4cc70b393ec9
+ ---> 417a5b9fdf4f
+Step 7/8 : WORKDIR /project
+Removing intermediate container 1273b7a17ddb
+ ---> 2c1ced79f35f
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in b51fded44e6f
+Removing intermediate container b51fded44e6f
+ ---> bd978069184f
+Successfully built bd978069184f
+Successfully tagged pubsub_sub:latest
+./src/edu/rit/CSCI652/impl/DbConnection.java:41: error: ')' expected
+        try (Connection conn = DriverManager.getConnection(databasePath){// "jdbc:sqlite::memory:")) {
+                                                                        ^
+1 error
+Compiled..
+8c4934951b97
+a88a57e5cea9
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:bd978069184f386962e98aa3e522809b596740001d5b56b875c87968b08ced10
+Deleted: sha256:2c1ced79f35f56ad3a5b4d1f4920a4f33ce959ed5effdaf0129f57dbda69de08
+Deleted: sha256:417a5b9fdf4f5d10f1f02506780038f75550093ba281ee80079251a3d49e6f2c
+Deleted: sha256:036cb8271d4ac4139e42030570066223105ba276fce0336b275ea1abdbd6c2f4
+Deleted: sha256:9ab6274f04d932e917161f12ec8b8b6e1613c81d70b553c486e2358b9855ca9a
+Deleted: sha256:34a77b0e057e984d47badb2d792ce58205432fb4dc139f780e514de189087b4b
+Deleted: sha256:d3495949ccf3a019a389bb99fc43c14da1080356a4495a8028904aa50c2a5b28
+Untagged: pubsub_em:latest
+Deleted: sha256:13d7bd666fb7aba158c927e156cfa03d0010f6723f9ef36b24f3cad9485d7d17
+Deleted: sha256:0db80fd5236057374b2981b90e025882a26ab3aa2d49f3f5b75ae378d3eeb6fd
+Deleted: sha256:d68632eeea44fed12be0c07963820c7dab0b74c0e74005229435ad5e8ae30554
+Deleted: sha256:acb91f3c789262489bc52db14b507a564745bb1c0cd2332194c5746d1ff6d843
+Deleted: sha256:bdff3413a0b1b0b7789a6cdfa5830e5b387af3ec5bf499b68fd7d4064e4afba8
+Deleted: sha256:1cdb193eed29deee889a2022aa0f437dae417f3061d415cef7e73ccee3b619b7
+Deleted: sha256:5a9130f38218542a811f949f4813e8751d9f3b4d06d6115efb8606c31b329e8d
+Deleted: sha256:0933748b45986f5f7b38c15fb4edeaf0afa3e8af0c2ab8f282ade5e1b4ba1a30
+Sending build context to Docker daemon  14.65MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 6767b2285750
+Removing intermediate container 6767b2285750
+ ---> 7b55352fc12d
+Step 3/8 : COPY . project
+ ---> 6d1148452f38
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in b855261f95a0
+Removing intermediate container b855261f95a0
+ ---> 50ee013d5883
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in f088730cd996
+Removing intermediate container f088730cd996
+ ---> e702c706932d
+Step 6/8 : EXPOSE 8079
+ ---> Running in 32749307afb2
+Removing intermediate container 32749307afb2
+ ---> 070e21a16035
+Step 7/8 : WORKDIR /project
+Removing intermediate container bec96fa7de42
+ ---> bac40a9b4108
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 820bd4ead63d
+Removing intermediate container 820bd4ead63d
+ ---> f68d60693cf8
+Successfully built f68d60693cf8
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.65MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 7b55352fc12d
+Step 3/8 : COPY . project
+ ---> ee54634540ee
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in d13493d91ec9
+Removing intermediate container d13493d91ec9
+ ---> 3ce288c6926a
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 90b466d252da
+Removing intermediate container 90b466d252da
+ ---> 2ac6271c585d
+Step 6/8 : EXPOSE 8079
+ ---> Running in b33459a03269
+Removing intermediate container b33459a03269
+ ---> cd799f05b35e
+Step 7/8 : WORKDIR /project
+Removing intermediate container 3e3814055693
+ ---> 00204afdd0a8
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 767684a5c807
+Removing intermediate container 767684a5c807
+ ---> eee878aedd70
+Successfully built eee878aedd70
+Successfully tagged pubsub_sub:latest
+Compiled..
+5c7d11b87e2c
+8458e1d177fb
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:eee878aedd703ad25c074b5922edf76983c957bbc19bfef6e4778a60640fcbe1
+Deleted: sha256:00204afdd0a8b34ec21e81bdc0a148d9fec4abec0574518835d667b86567965f
+Deleted: sha256:cd799f05b35e3530ebbb2eca82e65f3dce5ace712967489bc0580fb9f87f12f2
+Deleted: sha256:2ac6271c585d49b3f0d7d714c4f9438f5d543cfbf70afab545a826511cba4c0e
+Deleted: sha256:3ce288c6926acae373128ec8f66f2436a06d3ceac0b59fc0abc243af3b5a1917
+Deleted: sha256:ee54634540eed0753e1ad284a73c36d0b9ed50cf35ecaa4e4acc2778546eb5c0
+Deleted: sha256:574d0603d6d4990597342280729dfcc1398ea04637123af246ae8e7e571b1568
+Untagged: pubsub_em:latest
+Deleted: sha256:f68d60693cf89c12d3c814f6dc51cfc5e47de8c8c2a987c8754555b2abe28643
+Deleted: sha256:bac40a9b41089d20775ba3c03af26b93bac2dced4077be9c1bba0dbb8748e3c8
+Deleted: sha256:070e21a16035941313af0e76cd72a9f19e4560f21fcef085bff8c27532f6bba8
+Deleted: sha256:e702c706932de1f8a9de3e629b8e76bc0581c0833e1b7e35f91de6ecb03ea843
+Deleted: sha256:50ee013d588328caf971dafa19444400588025719a1bd3d4cbc7ec87874e4438
+Deleted: sha256:6d1148452f387c92ed8a844d7ce1b8491708bcf9a5e289bdc94a3dbea796c618
+Deleted: sha256:72f816e14d4d5acfb1fcf490656e3768234e6b7790cc3707fc0bf2c8cdfe0873
+Deleted: sha256:7b55352fc12dee00040f9bc52b6f1035d16d50060b34ea2e1c1eacc39e613e27
+Sending build context to Docker daemon  14.65MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in ab6c9509bc0f
+Removing intermediate container ab6c9509bc0f
+ ---> 528587acf5e3
+Step 3/8 : COPY . project
+ ---> d388c19c1b1b
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in cbc98819fa19
+Removing intermediate container cbc98819fa19
+ ---> 7b749e5791bd
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in dc90e77fd1c9
+Removing intermediate container dc90e77fd1c9
+ ---> e80eac7a134f
+Step 6/8 : EXPOSE 8079
+ ---> Running in e5256b33d84c
+Removing intermediate container e5256b33d84c
+ ---> 48fef3bf1072
+Step 7/8 : WORKDIR /project
+Removing intermediate container bee229a5ed2a
+ ---> 06cd8ee722cb
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in ec1f721b9a28
+Removing intermediate container ec1f721b9a28
+ ---> 34ff7daf8e7d
+Successfully built 34ff7daf8e7d
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.65MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 528587acf5e3
+Step 3/8 : COPY . project
+ ---> 5311aa092174
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in d41bb957a440
+Removing intermediate container d41bb957a440
+ ---> 9eb347e89508
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in c84ae531d361
+Removing intermediate container c84ae531d361
+ ---> 52b04d12a268
+Step 6/8 : EXPOSE 8079
+ ---> Running in ed88da13e9e3
+Removing intermediate container ed88da13e9e3
+ ---> 4da9fb601c36
+Step 7/8 : WORKDIR /project
+Removing intermediate container 3280a121b806
+ ---> dd100cce4c90
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 1f91f8d0dd7c
+Removing intermediate container 1f91f8d0dd7c
+ ---> b2d1b5228ea9
+Successfully built b2d1b5228ea9
+Successfully tagged pubsub_sub:latest
+Compiled..
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Stop one or more running containers
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:b2d1b5228ea9f52e005ff18568c1306d4133ed4cf8767fbc4d8c84af86b75d4e
+Deleted: sha256:dd100cce4c90e3ca38581a341b05c2850f46c60c0f1a7fe9420f0be6c1226ec2
+Deleted: sha256:4da9fb601c367b36ec89de0ee9cd0584caa73403c0b5bb16a212fc41e8aa873d
+Deleted: sha256:52b04d12a26821f5deadc3fc7f49524fe2d629c7ec80993dd0c97c3e46b6c344
+Deleted: sha256:9eb347e895085b365ce73c58ee7d702015c02d42de52cb89efa6e72f53926760
+Deleted: sha256:5311aa09217437cf9a9e0862af18cd1929fe725b51e14dbe558864867f465c6d
+Deleted: sha256:2b3c7f092e2be24120edc52fd1bdcddf27a6ece12230036d2d14031b8e239eaf
+Untagged: pubsub_em:latest
+Deleted: sha256:34ff7daf8e7d1603a3dd1afc8dc5007e7be7a1308dd9d7ad02f875b0aa78e587
+Deleted: sha256:06cd8ee722cbe3546d9c4f6b1dd099fa94c9a7b4c319769938ff810777962e2e
+Deleted: sha256:48fef3bf107291a00f2d6d0cc05249e0b44999208f66cbddccbd3a5505270955
+Deleted: sha256:e80eac7a134fa37d121e34f66bf7941f90abddbf32c83f94800a9e852261c369
+Deleted: sha256:7b749e5791bd8bfc89c8a4b90eb7d91e2d89c7303ff8e91b9743f9cd2eed780b
+Deleted: sha256:d388c19c1b1b2fa9be1d90064ce1eb3a0ceed76b5e8895b7d45c12fb78312bba
+Deleted: sha256:fefdc052cb0f05bc022931854c3c2f595521a72c9c2204229d8fbdb768288ec8
+Deleted: sha256:528587acf5e34809763dc20168ec0ba8890fd23f2e64157fa8bc265f0ae5bc11
+Sending build context to Docker daemon  14.65MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 07926037fa09
+Removing intermediate container 07926037fa09
+ ---> c1f2140fcd3a
+Step 3/8 : COPY . project
+ ---> 81345a84fd2e
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 33c84ed9c133
+Removing intermediate container 33c84ed9c133
+ ---> ce6d6c2fede1
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 57194188b927
+Removing intermediate container 57194188b927
+ ---> 073480200f1c
+Step 6/8 : EXPOSE 8079
+ ---> Running in 0b5f2ec22c35
+Removing intermediate container 0b5f2ec22c35
+ ---> ae9cc8e64d8c
+Step 7/8 : WORKDIR /project
+Removing intermediate container 9eb87b6a9df7
+ ---> dfdd3a815085
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in f8f28d970188
+Removing intermediate container f8f28d970188
+ ---> 59eea6532157
+Successfully built 59eea6532157
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.65MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> c1f2140fcd3a
+Step 3/8 : COPY . project
+ ---> 3c0498294c96
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 40418b23a64d
+Removing intermediate container 40418b23a64d
+ ---> 3a57e1472bff
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 687482bfe3d8
+Removing intermediate container 687482bfe3d8
+ ---> 8dfcf5aaba1b
+Step 6/8 : EXPOSE 8079
+ ---> Running in 92047ab90cec
+Removing intermediate container 92047ab90cec
+ ---> 57c5f1e0969e
+Step 7/8 : WORKDIR /project
+Removing intermediate container cb55229aa3ab
+ ---> 78ba8b7727b3
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 346f5bcf8ae5
+Removing intermediate container 346f5bcf8ae5
+ ---> 0b781931ea35
+Successfully built 0b781931ea35
+Successfully tagged pubsub_sub:latest
+Compiled..
+99a0ca1e55f2
+d3bfb320b556
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:0b781931ea35d2a5e982324cbee45424f7585c4b6dcb29a89ef54d9bd77ffe87
+Deleted: sha256:78ba8b7727b3704e72ef3bbc028b46ce9aae9396d12fe56f732485f87c275a99
+Deleted: sha256:57c5f1e0969e6a719d24f71db105f8ae1d57b81fec1614be78dd5755d7b6dd74
+Deleted: sha256:8dfcf5aaba1b46e3ef9768d21ace89c4d0d5e09edcbf2505be45582dc6161712
+Deleted: sha256:3a57e1472bffa79e80026a6356e0ec5645156c26cfae27e2964a8566ef37b8a2
+Deleted: sha256:3c0498294c96f2ac5338257045d3b830e5cd2c9232afe655331bc8e1e4613de9
+Deleted: sha256:6a9468d7972297b5eee7697492eb09f06533e5bec6f501cd2b9e99c19c4011ee
+Untagged: pubsub_em:latest
+Deleted: sha256:59eea653215728bd05d06a3dc19b4b61cad313ec1ebac3c12022cf236daefd88
+Deleted: sha256:dfdd3a81508533bcb31a0d1256e9e64215b54f9b56224d71d0ddc6244e7c724a
+Deleted: sha256:ae9cc8e64d8c180847e9b795dbd7bba0243885f5d974acf8830caa91640b49ad
+Deleted: sha256:073480200f1cac3dd3d74770e3807c0622007fe8fe5ac41959b95d29ca2bcd9d
+Deleted: sha256:ce6d6c2fede1049c706e678ed6565e666735bb0edbcd170e1221794ff91183bb
+Deleted: sha256:81345a84fd2e68974ad2d35548b7d56a4538f567f9a67f9623a43b01a2aed2a7
+Deleted: sha256:2bcefab81609b9230e0eaede2d8e1b53622c0375cacb9c6b9a7fc13b94fab1db
+Deleted: sha256:c1f2140fcd3ad85fbf2fd4f2f4fbbc5f634b309b1252e4f20a232e9bc1aa43d5
+Sending build context to Docker daemon  14.66MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 5c4acbf2e2ca
+Removing intermediate container 5c4acbf2e2ca
+ ---> 9676211c0a7a
+Step 3/8 : COPY . project
+ ---> 602fb3e9efb2
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 17e7f94dfda5
+Removing intermediate container 17e7f94dfda5
+ ---> f43a91c5ef34
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 3f17f78c8b77
+Removing intermediate container 3f17f78c8b77
+ ---> afca53a8e2cb
+Step 6/8 : EXPOSE 8079
+ ---> Running in c040b914a9d6
+Removing intermediate container c040b914a9d6
+ ---> a65e7841c4c3
+Step 7/8 : WORKDIR /project
+Removing intermediate container 88cbdaa76c77
+ ---> 0542cce9ebbc
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in ec1624e58585
+Removing intermediate container ec1624e58585
+ ---> 3e9cb0e379e1
+Successfully built 3e9cb0e379e1
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.66MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 9676211c0a7a
+Step 3/8 : COPY . project
+ ---> 5e4d69021b14
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 241717181a17
+Removing intermediate container 241717181a17
+ ---> 06326a297a97
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 789641168c27
+Removing intermediate container 789641168c27
+ ---> 33fd4debc79d
+Step 6/8 : EXPOSE 8079
+ ---> Running in b5cf6f87709b
+Removing intermediate container b5cf6f87709b
+ ---> 87d0b607d9c9
+Step 7/8 : WORKDIR /project
+Removing intermediate container 933c06090326
+ ---> e7d58fd9a835
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in cfaec94e8513
+Removing intermediate container cfaec94e8513
+ ---> 50e47097f98b
+Successfully built 50e47097f98b
+Successfully tagged pubsub_sub:latest
+Compiled..
+5f40c5eb9771
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:50e47097f98b857bb710e416aff9d8bbc513692c1a2d23ef1d485585127ced34
+Deleted: sha256:e7d58fd9a8355f2342932098a2bbf6fe5acbc604445a7bc586657e0ce8a58801
+Deleted: sha256:87d0b607d9c96cd732c2a97c81811885765b469ab078078eb345e684271d0e9a
+Deleted: sha256:33fd4debc79dfa5fd4185d81f4ae28063ba124423dc6d2fc304b394d54a5096d
+Deleted: sha256:06326a297a97ad2c674d500ffcf4733a8ca73fb8c3d43e550372762453a30b6f
+Deleted: sha256:5e4d69021b1487e383174f571df7165976b80dd400aa7ac5b3591a9e7de82296
+Deleted: sha256:ca0c87efb7283b2e4a49a5ad24244daee6d4a1ef36fa9532f91ce70e17a5a076
+Untagged: pubsub_em:latest
+Deleted: sha256:3e9cb0e379e1bd6c6c0d09afa17ff8ed4618a57f22babf9a1f63134f18e3cefb
+Deleted: sha256:0542cce9ebbc5e2e91f7eebecc2c17b89143bd613e78fdad0053556288fbc076
+Deleted: sha256:a65e7841c4c3f567aa7902ac2e2bcb5619cccf74c47fbc0a642dac8efa908767
+Deleted: sha256:afca53a8e2cbb2a29598480e33b42c70d1bc0d092b6a5b0906597baff5774a30
+Deleted: sha256:f43a91c5ef34870ab5de096877190ad5a01d3f8eae9bdb0621a33f61fb596f9c
+Deleted: sha256:602fb3e9efb2c091c2bd3accde07330839133e63f8486f1b5f59a152a492e41f
+Deleted: sha256:3faa52c647749fd63fa5606a32f67a02e2ce04c013b511b196ccde8417573bd5
+Deleted: sha256:9676211c0a7a862ca0abb92e2c2b6387e2cb1a712a818f6df187af6ceca850ea
+Sending build context to Docker daemon  14.66MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in e60670c8e498
+Removing intermediate container e60670c8e498
+ ---> 2b7efe9e59f5
+Step 3/8 : COPY . project
+ ---> 0f197bd345d5
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 600ac8f5d3bd
+Removing intermediate container 600ac8f5d3bd
+ ---> 62905378ef87
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 8de8183fabc8
+Removing intermediate container 8de8183fabc8
+ ---> 1de7f19d4359
+Step 6/8 : EXPOSE 8079
+ ---> Running in f97f46ba8105
+Removing intermediate container f97f46ba8105
+ ---> 0875a2ddf998
+Step 7/8 : WORKDIR /project
+Removing intermediate container f4ba0d01619c
+ ---> ccf2b31fd262
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in db55c48cd02d
+Removing intermediate container db55c48cd02d
+ ---> f0ce522bb8d7
+Successfully built f0ce522bb8d7
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.66MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 2b7efe9e59f5
+Step 3/8 : COPY . project
+ ---> feeb2726c0c0
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in de1a87c7b3e3
+Removing intermediate container de1a87c7b3e3
+ ---> b45598cca0b4
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 2483bd725fc2
+Removing intermediate container 2483bd725fc2
+ ---> 3235e1983e0a
+Step 6/8 : EXPOSE 8079
+ ---> Running in 0e4ff98405a8
+Removing intermediate container 0e4ff98405a8
+ ---> 61e6096ba713
+Step 7/8 : WORKDIR /project
+Removing intermediate container 0bb79dffb8b2
+ ---> 8a80c44ead83
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 10ba2a601456
+Removing intermediate container 10ba2a601456
+ ---> bd97a95f2587
+Successfully built bd97a95f2587
+Successfully tagged pubsub_sub:latest
+Compiled..
+e22d513c1ee0
+2c317d4bcc81
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...] [flags]
+
+Remove one or more images
+Untagged: pubsub_sub:latest
+Deleted: sha256:bd97a95f2587d2be36ff56d419310105f6f58946172261709223b84367298a2f
+Deleted: sha256:8a80c44ead83aa2e2e5c4708695f0464f4a3fc291365b8e222ad88a8e54a9e51
+Deleted: sha256:61e6096ba713757dd47146ae051da021e4439ce0ed926af8261030473fab7a62
+Deleted: sha256:3235e1983e0a6fd41eff732143e74ec22794fbb3ea9bb53be5537c83ea7a6d6f
+Deleted: sha256:b45598cca0b4cc96af9fd98d908a1f4d758c671c21d1cadb87d7c375d53cf48f
+Deleted: sha256:feeb2726c0c0e5c7f53062587acb4a24ab63213ee5c91672d0239ead82e11129
+Deleted: sha256:66e38218f569d141c94af4ba5ea602e8524fc841fe600ddb7fe046841ecfe8a7
+Untagged: pubsub_em:latest
+Deleted: sha256:f0ce522bb8d7fcaecc9e40312148302431c7c05c262b50373788992bdf55248a
+Deleted: sha256:ccf2b31fd2626404f225027c4911c24bd8702eb013aa63aade61e9c224fbc94d
+Deleted: sha256:0875a2ddf9989cbc7855f5543085a23c47a4510555ec28d711cc6c3ee1094719
+Deleted: sha256:1de7f19d435955e73ddb0c9f4b0488be6f6cf1ec759d92e5e6f57d2bf323d970
+Deleted: sha256:62905378ef87cb38418cd3abe5b8924997cf913010ab2ba142b8d738eda56ccc
+Deleted: sha256:0f197bd345d581d7eb2f14e713e2ba9077953252d4187b539c814b8172f4a7f8
+Deleted: sha256:132fe7dff2b82d56ebfd647e49a5778bc6fd133fbe9b09758aaadd40bd472959
+Deleted: sha256:2b7efe9e59f5bb68f095a7c88c4828edf38602325872f7ab154858bb38477eb5
+Sending build context to Docker daemon  14.66MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Running in 9266a35b5b04
+Removing intermediate container 9266a35b5b04
+ ---> 573e6057c903
+Step 3/8 : COPY . project
+ ---> bd4ccfab8927
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in efc4b7384263
+Removing intermediate container efc4b7384263
+ ---> bf14be8f19ce
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in e1e093eb0604
+Removing intermediate container e1e093eb0604
+ ---> d35fc19d1ab2
+Step 6/8 : EXPOSE 8079
+ ---> Running in 405cdba459a1
+Removing intermediate container 405cdba459a1
+ ---> 04dab8914143
+Step 7/8 : WORKDIR /project
+Removing intermediate container 4868ea0e6357
+ ---> c453f5783013
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar:database/pubsub.db;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 8dead02b6e63
+Removing intermediate container 8dead02b6e63
+ ---> ef37abadaedf
+Successfully built ef37abadaedf
+Successfully tagged pubsub_em:latest
+Sending build context to Docker daemon  14.67MB
+Step 1/8 : FROM openjdk
+ ---> 7c57090325cc
+Step 2/8 : CMD mkdir project
+ ---> Using cache
+ ---> 573e6057c903
+Step 3/8 : COPY . project
+ ---> 8e24b4e3acfb
+Step 4/8 : ARG SYSTEM_TYPE
+ ---> Running in 42dcf1970072
+Removing intermediate container 42dcf1970072
+ ---> f6460673d266
+Step 5/8 : ENV SYSTEM_TYPE=${SYSTEM_TYPE}
+ ---> Running in 8257d4d9f086
+Removing intermediate container 8257d4d9f086
+ ---> ebd54895e9e5
+Step 6/8 : EXPOSE 8079
+ ---> Running in 22b8c01d241f
+Removing intermediate container 22b8c01d241f
+ ---> d78ee587858e
+Step 7/8 : WORKDIR /project
+Removing intermediate container 95a07bd8a910
+ ---> f20d67a74caa
+Step 8/8 : CMD java -cp "out:lib/gson-2.6.2.jar:lib/sqlite-jdbc-3.21.0.jar:database/pubsub.db;" edu.rit.CSCI652.impl.$SYSTEM_TYPE
+ ---> Running in 4beb444d0253
+Removing intermediate container 4beb444d0253
+ ---> 2f68dbb0662e
+Successfully built 2f68dbb0662e
+Successfully tagged pubsub_sub:latest
